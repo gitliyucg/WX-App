@@ -1,0 +1,125 @@
+.baopin_scroll{
+	width: 100%;
+	height: 200rpx;
+	background: #2c2a38;
+}
+.sort{
+	width: 100%;
+	height: 60rpx;
+	line-height: 60rpx;
+	background: #2c2a38;
+	margin: 20rpx 0;
+	position: relative;
+}
+.sort:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.sort .sort_text{
+	float: left;
+	font-size: 24rpx;
+	color: #fff;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: center;
+	margin-left: 30rpx;
+}
+.sort .sort_text image{
+	width: 15rpx;
+	height: 15rpx;
+	vertical-align: middle;
+	margin-right: 10rpx;
+}
+.sort .shaixuan{
+	float: right;
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 24rpx;
+	color: #fff;
+	margin-right: 40rpx;
+}
+.baopin_scroll view{
+	display: inline-block;
+	font-size: 24rpx;
+	color: #fff;
+	width: 20%;
+	text-align: center;
+}
+.baopin_scroll .action{
+	color: #e9346f;
+}
+.filter{
+	position: absolute;
+	width: 100%;
+	left: 0; top: 60rpx;
+	z-index: 1;
+	height: auto;
+	background-color: rgba(0,0,0,.5);
+}
+.filter view{
+	width: 20%;
+	display: inline-block;
+	height: 50rpx;
+	line-height: 50rpx;
+	font-size: 24rpx;
+	color: #fff;
+	text-align: center;
+}
+.filter .action{
+	color: #e9346f;
+}
+.free-WaterfallFlow{
+	width:96%;
+	column-count:2;/*column-count 属性规定元素应该被分隔的列数：*/
+	margin: 0 auto;
+	column-gap: 10rpx;
+}
+.free-WaterfallFlow .flex-wrap{
+	display: inline-block;
+	width:100%;
+	margin-bottom:2%;
+	/*text-align: center;*/
+	position: relative;
+}
+.flex-wrap image{
+	width:100%;
+}
+.flex-wrap .float_view{
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	height: 60rpx;
+	line-height: 60rpx;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+}
+.flex-wrap .float_view view:nth-child(1){
+	flex: 3;
+	font-size:20rpx;
+	color:#fff;
+}
+.flex-wrap .float_view view:nth-child(1) .faceImg{
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	margin-top: 10rpx;
+	vertical-align: top;
+	margin-left: 10rpx;
+}
+.flex-wrap .float_view view:nth-child(1) .name{
+	margin-left: 10rpx;
+}
+.flex-wrap .float_view view:nth-child(2){
+	flex: 1;
+	font-size:20rpx;
+	color:#fff;
+	text-align: right;
+}
+.flex-wrap .float_view view:nth-child(2) .yan{
+	width: 30rpx;
+	height: 20rpx;
+}
+.flex-wrap .float_view view:nth-child(2) .yan text{
+	margin-left: 10rpx;
+}

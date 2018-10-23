@@ -1,0 +1,26 @@
+<import src="../components/tabbar/tabbar.wxml"/>
+<!-- 头部导航 -->
+<view class="head_nav {{tabFixed ? 'head_nav_fixed':''}}">
+    <view class="{{number == 1 ? 'action' : ''}}" data-id="1" catchtap="actionClass">抱品秀</view>
+    <view class="{{number == 2 ? 'action' : ''}}" data-id="2" catchtap="actionClass">小课堂</view>
+    <view class="{{number == 3 ? 'action' : ''}}" data-id="3" catchtap="actionClass">短故事</view>
+    <block>
+        <navigator url="/pages/search/search" hover-class="navigator-hover">
+            <icon type="search" size="16" color="#fff"></icon>
+        </navigator>
+    </block>
+</view>
+<view class="channel-wrap {{tabFixed ? 'marg-top':''}}" bindtouchstart="handletouchtart">
+    <view hidden="{{baopin}}">
+        <baopin></baopin>
+    </view>
+    <view hidden="{{classroom}}">
+        <classroom></classroom>
+    </view>
+    <view hidden="{{duangushi}}">
+        <duangushi></duangushi>
+    </view>
+    <!-- 占位元素抵消自定义tabBar的高度 -->
+    <view class="Placeholder"></view>
+</view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"></template>

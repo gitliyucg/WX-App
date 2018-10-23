@@ -1,0 +1,136 @@
+.cart_products{
+    background: #222;
+    margin-bottom: 20rpx;
+    padding: 20rpx;
+}
+.cart_products .products_icon{
+    vertical-align: middle;
+    margin-right: 20rpx;
+}
+.cart_products text{
+    font-size:32rpx;
+    color:#fff;
+}
+.cart-box .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #222;
+    border-bottom: 1px solid #555;
+}
+.icon_delete{
+    margin-top: 6rpx;
+}
+.cart-box .item .goods-info{
+    margin-left: 20rpx;
+}
+.cart-box .goods-img{
+    width: 160rpx;
+    margin-left: 20rpx;
+}
+.cart-box .row{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 430rpx;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+.cart-box .goods-name{
+    font-size: 32rpx;
+    width: calc(100% - 100rpx);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.goods-price{
+    font-size: 32rpx;
+    color: #fff;
+    line-height: 60rpx;
+}
+.cart-box .goods-type{
+    color: #999;
+    font-size: 24rpx;
+    margin-bottom: 20rpx;
+}
+.cart-box .num-box{
+    /*display: flex;*/
+    /*flex-direction: row;
+    justify-content: flex-end;*/
+}
+.cart-box .num-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cart-box .goods-btn{
+    width: 60rpx;
+    height: 60rpx;
+    padding: 0;
+    line-height: 60rpx;
+    font-weight: bold;
+    color: #999;
+    margin: 0;
+    background: #333;
+}
+.cart-box .num{
+    color: #999;
+    width: 60rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 24rpx;
+}
+.cart-box .btn-add{
+    font-size: 50rpx;
+}
+.cart-box .btn-minus{
+    font-size: 28rpx;
+}
+.cart-box .btn-groups{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 1px solid #222;
+    border-radius: 10rpx;
+    float: right;
+}
+.cart-fixbar{
+    position: fixed;
+    bottom: 0;
+    background: #333;
+    height: 100rpx;
+    width: 100%;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cart-fixbar .allSelect{
+    display: flex;
+    flex-direction: row;
+    height: 100rpx;
+    align-items: center;
+    color: #fff;
+    font-size: 32rpx;
+}
+.cart-fixbar .allSelect-text{
+    margin-left: 20rpx;
+}
+.cart-fixbar .count{
+    margin-left: 80rpx;
+    color: #fff;
+    font-size: 36rpx;
+}
+.cart-fixbar .order{
+    color:#fff;
+    height: 100rpx;
+    background: #222;
+    line-height: 100rpx;
+    position: absolute;
+    right: 0;
+    padding: 0 40rpx;
+    font-size: 32rpx;
+}
+.cart-fixbar .allnum{
+    font-size: 24rpx;
+}

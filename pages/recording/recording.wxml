@@ -1,0 +1,19 @@
+<!-- <import src="../components/tabbar/tabbar.wxml"/> -->
+<!-- <view class="container">
+	<video src="{{src}}"></video>
+	<button bindtap="bindButtonTap">获取视频</button>
+</view> -->
+<view class="img_wrap">
+	<view class="img_count">
+		<view>
+			<image src="../../static/icon/bendi.png" bindtap="localUpload"></image>
+			<view>本地选择</view>
+		</view>
+		<view>
+			<image src="../../static/icon/luxiang.png" bindtap="recordUpload"></image>
+			<view>开始录制</view>
+		</view>
+	</view>
+	<view class="img_close"><image src="../../static/icon/close.png" bindtap="close"></image></view>
+</view>
+<!-- <template is="tabBar" data="{{tabBar:bindData.tabBar}}"></template> -->

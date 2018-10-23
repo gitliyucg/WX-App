@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"baopin": "../components/baopin/baopin",
+		"classroom": "../components/classroom/classroom",
+		"duangushi": "../components/duangushi/duangushi"
+	},
+    "navigationBarTitleText": "频道"
+}

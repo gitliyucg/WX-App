@@ -1,0 +1,38 @@
+<scroll-view class="classroom_scroll" scroll-x="true">
+    <view wx:for="{{scrollView}}" id="{{item.id}}" data-id="{{item.id}}" class="{{item.id === action ? 'action' : ''}}" bindtap="acionClass">{{item.text}}</view>
+</scroll-view>
+
+<view class="sort">
+    <view class="sort_text" data-id="0" bindtap="actionClass">
+        <image wx:if="{{Sort != 0}}" src="../../../static/icon/new.png"></image>
+        <image wx:if="{{Sort == 0}}" src="../../../static/icon/new-action.png"></image>
+        <text style="color: {{Sort == 0 ? '#e9346f' : '#fff'}}">最新</text>
+    </view>
+    <view class="sort_text" data-id="1" bindtap="actionClass">
+        <image wx:if="{{Sort != 1}}" src="../../../static/icon/hot.png"></image>
+        <image wx:if="{{Sort == 1}}" src="../../../static/icon/hot-action.png"></image>
+        <text style="color: {{Sort == 1 ? '#e9346f' : '#fff'}}">最热</text>
+    </view>
+    <view class="sort_text" data-id="2" bindtap="actionClass">
+        <image wx:if="{{Sort != 2}}" src="../../../static/icon/zhuanfa.png"></image>
+        <image wx:if="{{Sort == 2}}" src="../../../static/icon/zhuanfa-action.png"></image>
+        <text style="color: {{Sort == 2 ? '#e9346f' : '#fff'}}">邀请转发</text>
+    </view>
+    <text class="shaixuan" wx:if="{{isShow}}" bindtap="showFilter">筛选</text>
+    <view class="filter" wx:if="{{isFilter}}">
+        <view wx:for="{{filter}}" id="{{item.id}}" data-id="{{item.id}}" class="{{item.id === filterAction ? 'action' : ''}}" bindtap="actionFilter">{{item.text}}</view>
+    </view>
+</view>
+
+<view class="content_wrap">
+    <view class="img">
+        <image mode="scaleToFill" src="../../../static/images/1.jpg"></image>
+    </view>
+    <view class="text">
+        <text class="content">测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</text>
+        <view class="date">
+            <text class="data_data">2018/08/02</text>
+            <text class="data_guankan">86人观看</text>
+        </view>
+    </view>
+</view>

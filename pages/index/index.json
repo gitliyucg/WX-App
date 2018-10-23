@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"baopin": "../components/baopin/baopin",
+		"classroom": "../components/classroom/classroom",
+		"duangushi": "../components/duangushi/duangushi",
+		"cartIcon": "../cart/cart_icon"
+	},
+    "navigationBarTitleText": "抱品网--首页"
+}

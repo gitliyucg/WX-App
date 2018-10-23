@@ -1,0 +1,19 @@
+<template name="videos">
+    <view class='video'>
+        <view class='video-img'>
+            <image src='{{img}}'></image>
+        </view>
+        <view class='yan-wrap'>
+            <image src='../../../static/icon/yan.png'></image>
+            <text class="num">{{num}}</text>
+        </view>
+        <view class='content-title'>
+            {{content}}
+        </view>
+    </view>
+</template>
+<view class='video-wrap'>
+	<block wx:for="{{video}}" wx:key="key">
+		<template is="videos" data="{{...item}}"></template>
+	</block>
+</view>

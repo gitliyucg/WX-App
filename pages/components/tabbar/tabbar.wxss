@@ -1,0 +1,40 @@
+.icon {
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.tabBar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10rpx;
+    margin-left: -4rpx;
+    background: #23212c;
+    font-size: 20rpx;
+    color: #8a8a8a;
+    box-shadow: 6rpx 6rpx 6rpx 6rpx #aaa;
+}
+
+.tabBar-item {
+    float: left;
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tabBar-item:nth-child(3){
+    /* position: relative; */
+    margin-top: -10px;
+    z-index: 2;
+}
+
+.tabBar-item:nth-child(3) image{
+    width: 81rpx;
+    height: 81rpx;
+}
+
+/*当前字体颜色*/
+
+.tabBartext {
+    color: #f6306e;
+}

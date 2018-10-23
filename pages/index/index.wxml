@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<!-- 头部导航 -->
+<import src="../components/tabbar/tabbar.wxml"/>
+<template name="videos">
+    <view class='video'>
+        <view class='video-img'>
+            <image src='{{img}}'></image>
+        </view>
+        <view class='yan-wrap'>
+            <image src='../../static/icon/yan.png'></image>
+            <text class="num">{{num}}</text>
+        </view>
+        <view class='content-title'>
+            {{content}}
+        </view>
+    </view>
+</template>
+<view class="index-wrap {{tabFixed ? 'marg-top':''}}">
+    <view class="head_nav {{tabFixed ? 'head_nav_fixed':''}}">
+        <view class="{{number == 0 ? 'action' : ''}}" data-id="0" catchtap="actionClass">精选</view>
+        <view class="{{number == 1 ? 'action' : ''}}" data-id="1" catchtap="actionClass">抱品秀</view>
+        <view class="{{number == 2 ? 'action' : ''}}" data-id="2" catchtap="actionClass">小课堂</view>
+        <view class="{{number == 3 ? 'action' : ''}}" data-id="3" catchtap="actionClass">短故事</view>
+        <block>
+            <navigator url="/pages/search/search" hover-class="navigator-hover">
+                <icon type="search" size="16" color="#fff"></icon>
+            </navigator>
+        </block>
+    </view>
+    <view hidden="{{index}}" class="">
+        <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#e9346f">
+            <block wx:for="{{imgUrls}}" wx:key="key">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class='content-video'>
+            <!-- 推荐 -->
+            <view class="title">
+                <icon><image src='../../static/icon/shangxin.png'></image>推荐</icon>
+            </view>
+            <view class='video-wrap'>
+                <block wx:for="{{video}}" wx:key="key">
+                    <template is="videos" data="{{...item}}"></template>
+                </block>
+            </view>
+            <!-- 今日上新 -->
+            <view class="title">
+                <icon><image src='../../static/icon/shangxin.png'></image>今日上新</icon>
+                <view class='more' data-id='0' bindtap='toMore'>更多 ></view>
+            </view>
+            <view class='video-wrap'>
+                <block wx:for="{{video}}" wx:key="key">
+                    <template is="videos" data="{{...item}}"></template>
+                </block>
+            </view>
+            <!-- 爆笑 -->
+            <view class="title">
+                <icon><image src='../../static/icon/shangxin.png'></image>爆笑</icon>
+                <view class='more' data-id="1" bindtap='toMore'>更多 ></view>
+            </view>
+            <view class='video-wrap'>
+                <block wx:for="{{video}}" wx:key="key">
+                    <template is="videos" data="{{...item}}"></template>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view hidden="{{baopin}}">
+        <baopin id="baopinxiu"></baopin>
+    </view>
+    <view hidden="{{classroom}}">
+        <classroom id="classroom"></classroom>
+    </view>
+    <view hidden="{{duangushi}}">
+        <duangushi id="duangushi"></duangushi>
+    </view>
+    <!-- 占位元素抵消自定义tabBar的高度 -->
+    <view class="Placeholder"></view>
+    <cartIcon></cartIcon>
+</view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"></template>

@@ -1,0 +1,42 @@
+<!-- 没有地址时显示 -->
+<view wx:if="{{isShow == true}}" class="chooseAddress" bindtap="gochooseAddress">
+	<text>新增个人地址</text>
+	<image class="more" src="../../static/icon/more.png"/>
+	<image class="border" src='../../static/images/border.png'/>
+</view>
+<!-- 已设置地址时显示 -->
+<view wx:if="{{isShow != true}}" class="Address" bindtap="gochooseAddress">
+	<view class="userInfo">
+		<text class="name">{{chooseAddress.userName}}</text>
+		<text class="phone">{{chooseAddress.telNumber}}</text>
+		<!--  -->
+		<view class="info">{{chooseAddress.provinceName}}{{chooseAddress.cityName}}{{chooseAddress.countyName}}{{chooseAddress.detailInfo}}</view>
+	</view>
+	<image class="more" src="../../static/icon/more.png"/>
+	<image class="border" src='../../static/images/border.png'/>
+</view>
+<!-- 商品展示 -->
+<view class="commodList">
+	<image mode="center" src="{{commodity.img}}"></image>
+	<view class="commod">
+		<view>{{commodity.title}}</view>
+		<view style="color: #999999">{{commodity.spec}}</view>
+		<view><text style="color: #f6306d">￥{{commodity.price}}</text><text style="margin-left: 40rpx;">×{{commodity.number}}</text></view>
+	</view>
+</view>
+<view class="wx_pay">
+	<image mode="aspectFit" src="../../static/images/wx_pay.png"/>
+	<icon type="success_no_circle" size="25"/>
+</view>
+<view class="beizhu">
+	<view>备注</view>
+	<textarea placeholder-style="color: #999999" placeholder="请输入备注"></textarea>
+</view>
+<!-- 下方付款按钮 -->
+<view class="pay">
+	<view>实付款</view>
+	<view>含运费</view>
+	<view>
+		<button bindtap="goPay">立即支付</button>
+	</view>
+</view>

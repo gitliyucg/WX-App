@@ -1,0 +1,135 @@
+.classroom_scroll{
+	width: 100%;
+	height: 60rpx;
+	background: #2c2a38;
+	/*line-height: 60rpx;*/
+	white-space: nowrap;
+}
+/*.classroom_scroll:after{
+	content: '';
+	display: block;
+	clear: both;
+}*/
+.classroom_scroll view{
+	display: inline-block;
+	font-size: 24rpx;
+	color: #fff;
+	text-align: center;
+	margin-left: 30rpx;
+	width: auto;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+.classroom_scroll .action{
+	color: #e9346f;
+}
+.sort{
+	width: 100%;
+	height: 60rpx;
+	line-height: 60rpx;
+	background: #2c2a38;
+	margin: 20rpx 0;
+	position: relative;
+}
+.sort:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.sort .sort_text{
+	float: left;
+	font-size: 24rpx;
+	color: #fff;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: center;
+	margin-left: 30rpx;
+}
+.sort .sort_text image{
+	width: 15rpx;
+	height: 15rpx;
+	vertical-align: middle;
+	margin-right: 10rpx;
+}
+.sort .shaixuan{
+	float: right;
+	height: 60rpx;
+	line-height: 60rpx;
+	font-size: 24rpx;
+	color: #fff;
+	margin-right: 40rpx;
+}
+.filter{
+	position: absolute;
+	width: 100%;
+	left: 0; top: 60rpx;
+	z-index: 1;
+	height: auto;
+	background-color: rgba(0,0,0,.5);
+}
+.filter view{
+	width: 20%;
+	display: inline-block;
+	height: 50rpx;
+	line-height: 50rpx;
+	font-size: 24rpx;
+	color: #fff;
+	text-align: center;
+}
+.filter .action{
+	color: #e9346f;
+}
+.content_wrap{
+	width: 96%;
+	margin: 0 auto;
+	/*display: flex;*/
+	margin-bottom: 20rpx;
+}
+.content_wrap:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.content_wrap .img{
+	/*flex: 1;*/
+	float: left;
+	width: 240rpx;
+	height: 150rpx;
+	overflow: hidden;
+}
+.content_wrap .img image{
+	width: 100%;
+	vertical-align: top;
+}
+.content_wrap .text{
+	width: 460rpx;
+	/*flex: 3;*/
+	float: left;
+	padding-left: 20rpx;
+}
+.content_wrap .text .content{
+	margin-top: 20rpx;
+	width:100%;
+	font-size:24rpx;
+	height:62rpx;
+	color:#fff;
+	overflow:hidden;
+	text-overflow:-o-ellipsis-lastline;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	line-clamp:2;
+	-webkit-box-orient:vertical;
+}
+.content_wrap .text .date{
+	margin-top: 20rpx;
+	width:100%;
+	font-size:24rpx;
+	color: #fff;
+}
+.content_wrap .text .date .data_data{
+	border-right: 1px solid #fff;
+	padding-right: 10rpx;
+	margin-right: 10rpx;
+}

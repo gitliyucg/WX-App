@@ -1,0 +1,86 @@
+.yue{
+	width: 100%;
+	padding: 40rpx 0;
+	text-align: center;
+	border-top: 1px solid #373545;
+	border-bottom: 1px solid #373545;
+}
+.yue_number{
+	font-weight: 700;
+	color: #eb3570;
+	font-size: 40rpx;
+}
+.yue_text{
+	color: #fff;
+	font-size: 28rpx;
+}
+.number_wrap{
+	width: 96%;
+	margin: 0 auto;
+}
+.number_wrap:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.float_number{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	text-align: center;
+	padding: 40rpx 0;
+	border-radius: 10rpx;
+	margin-top: 20rpx;
+	height: 80rpx;
+}
+.float_number:nth-of-type(3n){
+	margin-right: 0;
+}
+.float_number_number{
+	font-size: 32rpx;
+	color: #eb3570;
+}
+.float_number_text{
+	font-size: 28rpx;
+	color: #69696b;
+}
+.float_number_none{
+	background: #2c2a38;
+}
+.float_number_none .float_number_number{
+	font-size: 32rpx;
+	color: #eb3570;
+}
+.float_number_none .float_number_text{
+	font-size: 28rpx;
+	color: #69696b;
+}
+.float_number_action{
+	background: #eb3570
+}
+.float_number_action .float_number_number{
+	font-size: 32rpx;
+	color: #fff;
+}
+.float_number_action .float_number_text{
+	font-size: 28rpx;
+	color: #fff;
+}
+.shuru{
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	color: #fff;
+	font-size: 32rpx;
+	text-align: center;
+}
+.shuru input{
+	width: 100rpx;
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+}
+button{
+	width: 200rpx;
+	background: #eb3570;
+	color: #fff;
+	margin: 0 auto;
+}

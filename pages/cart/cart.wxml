@@ -1,0 +1,39 @@
+<view class="cart-box">
+    <view class="cart_products" wx:for="{{list}}" wx:for-index="aindex">
+        <icon class="products_icon" type="{{item.select}}" size="26" color="#f6306d" data-index="{{aindex}}" data-select="{{item.select}}" bindtap="productsAll"/>
+        <text>{{item.name}}</text>
+        <view class="item" wx:for="{{item.lists}}">
+            <icon type="{{item.select}}" size="26" color="#f6306d" data-aindex="{{aindex}}" data-index="{{index}}" data-select="{{item.select}}" bindtap="change"/>
+            <image src="{{item.url}}" class="goods-img" mode="widthFix"></image>
+            <view class="goods-info">
+                <view class="row">
+                    <view class="goods-name">{{item.name}}</view>
+                    <icon class="icon_delete" type="cancel" size="20" data-aindex="{{aindex}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="Delete"></icon>
+                </view>
+                <view class="goods-type">
+                    {{item.style}}
+                </view>
+                <view class="num-box">
+                    <text class="goods-price">￥{{item.price}}</text>
+                    <view class="btn-groups">
+                        <button class="goods-btn btn-minus" data-aindex="{{aindex}}" data-index="{{index}}" data-num="{{item.num}}" data-stock="{{item.stock}}" bindtap="subtraction">—</button>
+                        <view class="num">{{item.num}}</view>
+                        <button class="goods-btn btn-add" data-aindex="{{aindex}}" data-index="{{index}}" data-num="{{item.num}}" data-stock="{{item.stock}}" bindtap="addtion">+</button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="cart-fixbar">
+    <view class="allSelect">
+        <icon type="{{allSelect}}" size="26" color="#f6306d" data-select="{{allSelect}}" bindtap="allSelect"/>
+        <view class="allSelect-text">全选</view>
+    </view>
+    <view class="count">
+        <text>合计：￥</text>{{count}}
+    </view>
+    <view class="order" bindtap="goSettle">
+        去结算<text class="allnum">({{num}})</text>
+    </view>
+</view>

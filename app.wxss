@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import "./pages/components/tabbar/tabbar.wxss";
+page{
+	background-color: #23212c;
+	width: 100%;
+	height: 100%;
+}
+/* tabbar栏脱离文档流遮盖下面的内容要将遮盖的内容显示 */
+.padding-tabbar{
+    padding-bottom: 100rpx;
+}
+.margin-tabbar{
+    margin-bottom: 100rpx;
+}
+.Placeholder{
+	width: 100%;
+	height: 100rpx;
+}

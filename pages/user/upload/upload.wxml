@@ -1,0 +1,4 @@
+<view>
+    <view bindtap='uploadImg'>上传图片</view>
+    <image wx:for="{{src}}" src="{{item}}" data-src="{{item}}" data-list="{{src}}" bindtap="previewImg"></image>
+</view>

@@ -1,0 +1,60 @@
+<scroll-view class="baopin_scroll" scroll-y="true">
+    <view wx:for="{{scrollView}}" id="{{item.id}}" data-id="{{item.id}}" class="{{item.id === action ? 'action' : ''}}" bindtap="acionClass">{{item.text}}</view>
+</scroll-view>
+
+<view class="sort">
+    <view class="sort_text" data-id="0" bindtap="actionClass">
+        <image wx:if="{{Sort != 0}}" src="../../../static/icon/new.png"></image>
+        <image wx:if="{{Sort == 0}}" src="../../../static/icon/new-action.png"></image>
+        <text style="color: {{Sort == 0 ? '#e9346f' : '#fff'}}">最新</text>
+    </view>
+    <view class="sort_text" data-id="1" bindtap="actionClass">
+        <image wx:if="{{Sort != 1}}" src="../../../static/icon/hot.png"></image>
+        <image wx:if="{{Sort == 1}}" src="../../../static/icon/hot-action.png"></image>
+        <text style="color: {{Sort == 1 ? '#e9346f' : '#fff'}}">最热</text>
+    </view>
+    <view class="sort_text" data-id="2" bindtap="actionClass">
+        <image wx:if="{{Sort != 2}}" src="../../../static/icon/zhuanfa.png"></image>
+        <image wx:if="{{Sort == 2}}" src="../../../static/icon/zhuanfa-action.png"></image>
+        <text style="color: {{Sort == 2 ? '#e9346f' : '#fff'}}">邀请转发</text>
+    </view>
+    <text class="shaixuan" wx:if="{{isShow}}" bindtap="showFilter">筛选</text>
+    <view class="filter" wx:if="{{isFilter}}">
+        <view wx:for="{{filter}}" id="{{item.id}}" data-id="{{item.id}}" class="{{item.id === filterAction ? 'action' : ''}}" bindtap="actionFilter">{{item.text}}</view>
+    </view>
+</view>
+
+<view class="free-WaterfallFlow">
+    <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}'
+            wx:if="{{item.id%2!=''}}">
+            <image mode="widthFix" src="{{item.src}}"></image>
+            <view class="float_view">
+                <view>
+                    <image class="faceImg" src="{{item.src}}"></image>
+                    <text class="name">{{item.name}}</text>
+                </view>
+                <view>
+                    <image class="yan" src="../../../static/icon/yan.png"></image>
+                    <text>{{item.data}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}'
+            wx:if="{{item.id%2==''}}">
+            <image mode="widthFix" src="{{item.src}}"></image>
+            <view class="float_view">
+                <view>
+                    <image class="faceImg" src="{{item.src}}"></image>
+                    <text class="name">{{item.name}}</text>
+                </view>
+                <view>
+                    <image class="yan" src="../../../static/icon/yan.png"></image>
+                    <text>{{item.data}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

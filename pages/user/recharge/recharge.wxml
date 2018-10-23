@@ -1,0 +1,48 @@
+<view class="yue">
+	<view class="yue_number">0.41</view>
+	<view class="yue_text">账户余额（抱点）</view>
+</view>
+<view style="width: 96%; margin: 0 auto; color: #fff; font-size: 32rpx;">请选择充值金额</view>
+<view class="number_wrap">
+	<view class="float_number {{number == 1 ? 'float_number_action' : 'float_number_none'}}" data-number="1" data-amount="50" bindtap="tabNumber">
+		<view class="float_number_number">￥50.00</view>
+		<view class="float_number_text">50抱点</view>
+	</view>
+	<view class="float_number {{number == 2 ? 'float_number_action' : 'float_number_none'}}" data-number="2" data-amount="80" bindtap="tabNumber">
+		<view class="float_number_number">￥80.00</view>
+		<view class="float_number_text">80抱点</view>
+	</view>
+	<view class="float_number {{number == 3 ? 'float_number_action' : 'float_number_none'}}" data-number="3" data-amount="100" bindtap="tabNumber">
+		<view class="float_number_number">￥100.00</view>
+		<view class="float_number_text">100抱点</view>
+	</view>
+	<view class="float_number {{number == 4 ? 'float_number_action' : 'float_number_none'}}" data-number="4" data-amount="200" bindtap="tabNumber">
+		<view class="float_number_number">￥200.00</view>
+		<view class="float_number_text">200抱点</view>
+	</view>
+	<view class="float_number {{number == 5 ? 'float_number_action' : 'float_number_none'}}" data-number="5" data-amount="500" bindtap="tabNumber">
+		<view class="float_number_number">￥500.00</view>
+		<view class="float_number_text">500抱点</view>
+	</view>
+	<view class="float_number {{number == 6 ? 'float_number_action' : 'float_number_none'}}" data-number="6" data-amount="1000" bindtap="tabNumber">
+		<view class="float_number_number">￥1000.00</view>
+		<view class="float_number_text">1000抱点</view>
+	</view>
+	<view class="float_number {{number == 7 ? 'float_number_action' : 'float_number_none'}}" data-number="7" data-amount="2000" bindtap="tabNumber">
+		<view class="float_number_number">￥2000.00</view>
+		<view class="float_number_text">2000抱点</view>
+	</view>
+	<view class="float_number {{number == 8 ? 'float_number_action' : 'float_number_none'}}" data-number="8" data-amount="3000" bindtap="tabNumber">
+		<view class="float_number_number">￥3000.00</view>
+		<view class="float_number_text">3000抱点</view>
+	</view>
+	<view class="float_number {{number == 9 ? 'float_number_action' : 'float_number_none'}}" data-number="9" data-amount="0" bindtap="tabNumber">
+		<view class="float_number_number">￥其他金额</view>
+		<view class="float_number_text"> </view>
+	</view>
+</view>
+<view wx:if="{{number == 9 ? false : true}}" style="text-align: center; color: #fff; margin-top: 20rpx; margin-bottom: 20rpx; font-size: 32rpx;">支付金额: ￥{{amount}}.00</view>
+<view wx:if="{{number == 9 ? true : false}}" class="shuru">请输入要填写的金额<input type="number"/>(输入数字)</view>
+<button>立即支付</button>
+<view style="font-size: 32rpx; color: #fff; margin-top: 20rpx;">文新提示：</view>
+<view style="font-size: 28rpx; color: #fff">1.抱点兑换规则:1抱点=1元。</view>

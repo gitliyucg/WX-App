@@ -1,0 +1,23 @@
+.img_wrap{
+	width: 100%;
+	position: fixed;
+	left: 0; bottom: 80rpx;
+}
+.img_count{
+	column-count:2;
+	text-align: center;
+	font-size: 24rpx;
+	color: #fff;
+	margin-bottom: 100rpx;
+}
+.img_count image{
+	width: 160rpx;
+	height: 160rpx;
+}
+.img_close{
+	text-align: center;
+}
+.img_close image{
+	width: 80rpx;
+	height: 80rpx;
+}

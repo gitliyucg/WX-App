@@ -1,0 +1,9 @@
+<view class='search-wrap'>
+    <input value="{{value}}" focus="true" type='text' confirm-type='search' bindfocus="bindKeyInput" bindblur="bindKeyValue" placeholder="请输入要搜索的内容" placeholder-style="#fff"></input>
+    <view wx:if="{{hidden}}">
+        <view class='hot'>热门搜索</view>
+        <view class='label-wrap'>
+            <text bindtap='hotLabel' data-inner="{{item}}" wx:for="{{label}}">{{item}}</text>
+        </view>
+    </view>
+</view>

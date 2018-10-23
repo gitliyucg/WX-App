@@ -1,0 +1,4 @@
+<import src="../components/tabbar/tabbar.wxml"/>
+<!-- 占位元素抵消自定义tabBar的高度 -->
+<view class="Placeholder"></view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"></template>

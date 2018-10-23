@@ -1,0 +1,6 @@
+<navigator url="/pages/cart/cart">
+	<view style="width: 100rpx; height: 100rpx; position: fixed; right: 0; bottom: 100rpx; z-index: 30">
+		<text style="position: absolute; top: 0; left: 0; font-size: 20rpx; color: #fff; width: 100%; text-align: center">{{number}}</text>
+		<image style="width: 100%; height: 100%" src="../../static/icon/gwc_pic.png"></image>
+	</view>
+</navigator>

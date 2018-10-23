@@ -1,0 +1,143 @@
+.fiexd_top_user{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: #23212c;
+}
+.user{
+    width: 96%;
+    margin: 0 auto;
+    height: 150rpx;
+}
+.user image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.user .user_name_loging{
+    display: inline-block;
+    color: white;
+    font-size: 28rpx;
+    margin: 25rpx 20rpx;
+}
+.user .user_name_loging button{
+    margin-top: 30rpx;
+    width: 120rpx;
+    height: 40rpx;
+    font-size: 20rpx;
+    color: #fff;
+    background-color: #e9346f;
+    line-height: 40rpx;
+}
+.tab{
+    width: 100%;
+    height: 90rpx;
+    -moz-column-count:5; 	/* Firefox */
+    -webkit-column-count:5; /* Safari 和 Chrome */
+    column-count:5;
+    -moz-column-gap:20rpx;		/* Firefox */
+    -webkit-column-gap:20rpx;	/* Safari 和 Chrome */
+    column-gap:20rpx;
+    -moz-column-rule:1px outset #fff;	/* Firefox */
+    -webkit-column-rule:1px outset #fff;	/* Safari and Chrome */
+    column-rule:1px outset #fff;
+    margin-top: 10rpx;
+    padding-top: 10rpx;
+    border-top: 1px solid #2c2a38;
+}
+.tab view{
+    font-size: 24rpx;
+    color: #fff;
+    text-align: center;
+}
+.tab view text{
+    display: block;
+}
+.scroll-manu{
+    width: 100%;
+    height: auto;
+    padding-top: 270rpx;
+}
+.center_top{
+    width: 100%;
+}
+.center_top view{
+    margin: 0 auto;
+    width: 400rpx;
+    height: 400rpx;
+    line-height: 400rpx;
+    text-align: center;
+    border-radius: 50%;
+    background: #e9346f;
+    color: #fff;
+}
+.center_bottom{
+    column-count: 2;
+    column-count:2;/*column-count 属性规定元素应该被分隔的列数：*/
+	column-gap: 0;
+    margin-top: -32rpx;
+    font-size: 28rpx;
+}
+.center_left{
+    text-align: right;
+    zoom: 1;
+}
+.center_right{
+    zoom: 1;
+}
+.center_left:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.center_right:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.center_left view{
+    height: 300rpx;
+    width: 300rpx;
+    background: #666;
+    color: #fff;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+}
+.center_right view text,.center_left view text{
+    display: block;
+}
+.center_right view{
+    width: 300rpx;
+    height: 300rpx;
+    background: #666;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+}
+.scroll_manu_list{
+    color: #fff;
+    font-size: 28rpx;
+    padding: 20rpx 20rpx;
+    border-bottom: 1px solid #2c2a38;
+}
+.scroll_manu_list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.scroll_manu_list .icon1{
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 20rpx;
+}
+.scroll_manu_list .icon2{
+    width: 15rpx;
+    height: 15rpx;
+    vertical-align: middle;
+    float: right;
+    margin-top: 15rpx;
+}

@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/logs/logs",
+        "pages/channel/channel",
+        "pages/recording/recording",
+        "pages/attention/attention",
+        "pages/user/user",
+        "pages/settle/settle",
+        "pages/search/search",
+        "pages/user/upload/upload",
+        "pages/index/more/more",
+        "pages/cart/cart",
+        "pages/user/zan/zan",
+        "pages/user/sort/sort",
+        "pages/user/comment/comment",
+        "pages/user/merchant/merchant",
+        "pages/user/platform/platform",
+        "pages/user/recharge/recharge"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#23212c",
+        "navigationBarTextStyle": "#fff",
+        "navigationBarTitleText": "抱品网",
+        "backgroundTextStyle":"dark",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": "10",
+        "backgroundColor": "#23212c"
+    },
+    "debug": true,
+    "plugins": {
+        "brickLayout": {
+            "version": "0.1.1",
+            "provider": "wx3c042630f3cdc175"
+        }
+    }
+}
