@@ -44,5 +44,5 @@
 <view wx:if="{{number == 9 ? false : true}}" style="text-align: center; color: #fff; margin-top: 20rpx; margin-bottom: 20rpx; font-size: 32rpx;">支付金额: ￥{{amount}}.00</view>
 <view wx:if="{{number == 9 ? true : false}}" class="shuru">请输入要填写的金额<input type="number"/>(输入数字)</view>
 <button>立即支付</button>
-<view style="font-size: 32rpx; color: #fff; margin-top: 20rpx;">文新提示：</view>
+<view style="font-size: 32rpx; color: #fff; margin-top: 20rpx;">温馨提示：</view>
 <view style="font-size: 28rpx; color: #fff">1.抱点兑换规则:1抱点=1元。</view>
