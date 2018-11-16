@@ -32,7 +32,7 @@ Page({
 		},
 		{
 				id: 50,
-				name: '店铺1',
+				name: '店铺2',
 				select:"circle",
 				lists: [{
 					id: 0,
@@ -267,11 +267,24 @@ Page({
 					})
 					that.count();
 					that.countNum();
+                    that.deleteDian(that.data.list)
 				}
 			}
 		})
 	},
-	// 套转到结算页面
+    // 判断是否删除店铺
+    deleteDian: function(data){
+        var that = this;
+        data.map(function (value, key, arr){
+            if(value['lists'].length == 0){
+                arr.splice(key, 1)
+            }
+            that.setData({
+                list: arr
+            })
+        })
+    },
+	// 跳转到结算页面
 	goSettle: function(){
 		wx.navigateTo({
 		  	url: '/pages/settle/settle',
